@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "245230045990",
+    "project_id": "logwatchlistapp",
+    "storage_bucket": "logwatchlistapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:245230045990:android:6f0bf7df46ff237b82cfe7",
+        "android_client_info": {
+          "package_name": "com.daca.logwatchlistapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "245230045990-qi9mfvrqc6ckrqvm5nl2pklcsst2oh3e.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB4La7xZSIX68cxYNoUaBLBCa2BczNGp7o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "245230045990-qi9mfvrqc6ckrqvm5nl2pklcsst2oh3e.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
