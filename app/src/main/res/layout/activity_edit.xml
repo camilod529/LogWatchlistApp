@@ -15,7 +15,7 @@
         android:layout_marginBottom="16dp"
         android:background="@drawable/custom_edit_text"
         android:ems="10"
-        android:hint="Nombre"
+        android:hint="@string/nombre_edit"
         android:inputType="textPersonName"
         android:minHeight="48dp"
         android:textAlignment="center"
@@ -30,7 +30,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:ems="10"
-        android:hint="Plataforma"
+        android:hint="@string/plataforma_edit"
         android:background="@drawable/custom_edit_text"
         android:inputType="textPersonName"
         android:textAlignment="center"
@@ -38,6 +38,25 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ed_nombre_edit" />
+
+    <EditText
+        android:id="@+id/ed_capitulos_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="48dp"
+        android:background="@drawable/custom_edit_text"
+        android:ems="10"
+        android:hint="@string/capitulos_edit"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/spinner_dias_edit"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ed_plataforma_edit"
+        app:layout_constraintVertical_bias="0.009" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/floatingActionButton3"
