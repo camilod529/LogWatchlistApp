@@ -1,6 +1,17 @@
 <resources>
     <string name="app_name">log</string>
     <string name="title_activity_edit">EditActivity</string>
+    <string name="create_user_SignIn">Create user</string>
+    <string name="correo_electronico_SignIn">Correo Electronico</string>
+    <string name="crear_usuario_btn_SignIn">Crear usuario</string>
+    <string name="contrasena_SignIn">Contraseña</string>
+    <string name="nombre_apodo_SignIn">Nombre/Apodo</string>
+    <string name="contrasena_LogIn">Contraseña</string>
+    <string name="accede_btn_LogIn">Accede</string>
+    <string name="capitulos_edit">Capitulos</string>
+    <string name="plataforma_edit">Plataforma</string>
+    <string name="nombre_edit">Nombre</string>
+    <string name="welcome_back_LogIn">Welcome Back</string>
     <string-array name="dias_array">
         <item>Lunes</item>
         <item>Martes</item>
