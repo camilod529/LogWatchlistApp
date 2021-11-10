@@ -8,15 +8,17 @@ public class Elemento {
     private String plat;
     private int cap;
     private String dia;
+    private String categoria;
 
     Elemento (){}
 
-    Elemento (String id, String nombre, String plat, int cap, String dia) {
+    Elemento (String id, String nombre, String plat, int cap, String dia, String categoria) {
         this.id = id;
         this.nombre = nombre;
         this.plat = plat;
         this.cap = cap;
         this.dia = dia;
+        this.categoria = categoria;
     }
 
     Elemento  (String id, String nombre, String plat){
@@ -63,5 +65,13 @@ public class Elemento {
 
     public void setDia(String dia) {
         this.dia = dia;
+    }
+
+    public String getCategoria() {
+        return categoria;
+    }
+
+    public void setCategoria(String categoria) {
+        this.categoria = categoria;
     }
 }

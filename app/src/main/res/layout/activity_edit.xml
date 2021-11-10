@@ -48,7 +48,7 @@
         android:background="@drawable/custom_edit_text"
         android:ems="10"
         android:hint="@string/capitulos_edit"
-        android:inputType="textPersonName"
+        android:inputType="number"
         android:minHeight="48dp"
         android:textAlignment="center"
         app:layout_constraintBottom_toBottomOf="parent"

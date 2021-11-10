@@ -14,6 +14,7 @@
         <entry key="..\:/unab/LogWatchlistApp/app/src/main/res/drawable/custom_button.xml" value="0.37864583333333335" />
         <entry key="..\:/unab/LogWatchlistApp/app/src/main/res/drawable/custom_edit_text.xml" value="0.37864583333333335" />
         <entry key="..\:/unab/LogWatchlistApp/app/src/main/res/drawable/custom_rv_card_lista_categoria.xml" value="0.37864583333333335" />
+        <entry key="..\:/unab/LogWatchlistApp/app/src/main/res/layout/activity_detalle_lista.xml" value="0.3625" />
         <entry key="..\:/unab/LogWatchlistApp/app/src/main/res/layout/activity_edit.xml" value="0.33" />
         <entry key="..\:/unab/LogWatchlistApp/app/src/main/res/layout/activity_listas.xml" value="0.3625" />
         <entry key="..\:/unab/LogWatchlistApp/app/src/main/res/layout/activity_log_in.xml" value="0.3625" />
@@ -23,6 +24,7 @@
         <entry key="..\:/unab/LogWatchlistApp/app/src/main/res/layout/fragment_first.xml" value="0.3625" />
         <entry key="..\:/unab/LogWatchlistApp/app/src/main/res/layout/fragment_second.xml" value="0.3625" />
         <entry key="..\:/unab/LogWatchlistApp/app/src/main/res/layout/my_row.xml" value="0.3625" />
+        <entry key="..\:/unab/LogWatchlistApp/app/src/main/res/layout/my_row_detallelista.xml" value="0.67" />
       </map>
     </option>
   </component>
