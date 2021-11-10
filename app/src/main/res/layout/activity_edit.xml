@@ -8,7 +8,7 @@
     tools:context=".EditActivity">
 
     <EditText
-        android:id="@+id/ed_nombre_edit"
+        android:id="@+id/et_nombre_edit"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="64dp"
@@ -19,13 +19,13 @@
         android:inputType="textPersonName"
         android:minHeight="48dp"
         android:textAlignment="center"
-        app:layout_constraintBottom_toTopOf="@+id/ed_plataforma_edit"
+        app:layout_constraintBottom_toTopOf="@+id/et_plataforma_edit"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/ed_plataforma_edit"
+        android:id="@+id/et_plataforma_edit"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
@@ -37,10 +37,10 @@
         android:minHeight="48dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ed_nombre_edit" />
+        app:layout_constraintTop_toBottomOf="@+id/et_nombre_edit" />
 
     <EditText
-        android:id="@+id/ed_capitulos_edit"
+        android:id="@+id/et_capitulos_edit"
         android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="28dp"
@@ -48,18 +48,18 @@
         android:background="@drawable/custom_edit_text"
         android:ems="10"
         android:hint="@string/capitulos_edit"
-        android:inputType="number"
+        android:inputType="textPersonName"
         android:minHeight="48dp"
         android:textAlignment="center"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/spinner_dias_edit"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ed_plataforma_edit"
+        app:layout_constraintTop_toBottomOf="@+id/et_plataforma_edit"
         app:layout_constraintVertical_bias="0.009" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/floatingActionButton3"
+        android:id="@+id/floatingActionButton_edit"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="340dp"
@@ -70,8 +70,10 @@
         android:clickable="true"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
         app:srcCompat="@android:drawable/ic_menu_save"
         tools:ignore="SpeakableTextPresentCheck" />
 
@@ -87,7 +89,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.878"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ed_plataforma_edit"
+        app:layout_constraintTop_toBottomOf="@+id/et_plataforma_edit"
         app:layout_constraintVertical_bias="0.017"
         tools:ignore="SpeakableTextPresentCheck" />
 

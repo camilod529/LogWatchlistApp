@@ -8,14 +8,22 @@ public class Elemento implements Serializable {
     private String id;
     private String nombre;
     private String plat;
-    private int cap;
+    private String cap;
     private String dia;
     private String categoria;
 
     Elemento (){}
 
-    Elemento (String id, String nombre, String plat, int cap, String dia, String categoria) {
+    Elemento (String id, String nombre, String plat, String cap, String dia, String categoria) {
         this.id = id;
+        this.nombre = nombre;
+        this.plat = plat;
+        this.cap = cap;
+        this.dia = dia;
+        this.categoria = categoria;
+    }
+
+    Elemento (String nombre, String plat, String cap, String dia, String categoria) {
         this.nombre = nombre;
         this.plat = plat;
         this.cap = cap;
@@ -53,11 +61,11 @@ public class Elemento implements Serializable {
         this.plat = plat;
     }
 
-    public int getCap() {
+    public String getCap() {
         return cap;
     }
 
-    public void setCap(int cap) {
+    public void setCap(String cap) {
         this.cap = cap;
     }
 
