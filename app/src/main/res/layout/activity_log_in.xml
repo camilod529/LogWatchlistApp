@@ -17,7 +17,7 @@
         android:textColor="@color/blancoTexto"
         android:textSize="26sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/etCrearEmail"
+        app:layout_constraintBottom_toTopOf="@+id/etEmail_logIn"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
@@ -25,7 +25,7 @@
         app:layout_constraintVertical_bias="0.225" />
 
     <EditText
-        android:id="@+id/etCrearEmail"
+        android:id="@+id/etEmail_logIn"
         android:layout_width="wrap_content"
         android:layout_height="48dp"
         android:layout_marginTop="56dp"
@@ -39,7 +39,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/btn_accede_logIn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:backgroundTint="@color/rojo"
@@ -48,11 +48,11 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etCrearPass"
+        app:layout_constraintTop_toBottomOf="@+id/etPass_logIn"
         app:layout_constraintVertical_bias="0.762" />
 
     <EditText
-        android:id="@+id/etCrearPass"
+        android:id="@+id/etPass_logIn"
         android:layout_width="wrap_content"
         android:layout_height="48dp"
         android:layout_marginTop="40dp"
@@ -63,5 +63,5 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etCrearEmail" />
+        app:layout_constraintTop_toBottomOf="@+id/etEmail_logIn" />
 </androidx.constraintlayout.widget.ConstraintLayout>
