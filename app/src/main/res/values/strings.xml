@@ -21,5 +21,13 @@
         <item>Sabado</item>
         <item>Domingo</item>
     </string-array>
+    <string-array name="nombres_listas">
+        <item>anime</item>
+        <item>manga</item>
+        <item>series</item>
+        <item>comics</item>
+        <item>películas</item>
+        <item>otros</item>
+    </string-array>
 
 </resources>
