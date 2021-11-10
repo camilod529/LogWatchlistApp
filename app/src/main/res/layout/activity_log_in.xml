@@ -17,7 +17,7 @@
         android:textColor="@color/blancoTexto"
         android:textSize="26sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/etEmail_logIn"
+        app:layout_constraintBottom_toTopOf="@+id/etEmail"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
@@ -25,18 +25,21 @@
         app:layout_constraintVertical_bias="0.225" />
 
     <EditText
-        android:id="@+id/etEmail_logIn"
+        android:id="@+id/etEmail"
         android:layout_width="wrap_content"
         android:layout_height="48dp"
         android:layout_marginTop="56dp"
         android:background="@drawable/custom_edit_text"
         android:ems="10"
+        android:textColor="@color/negroFondo"
+        android:gravity="center"
         android:hint="@string/correo_electronico_SignIn"
         android:inputType="textEmailAddress"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        tools:ignore="TextContrastCheck" />
 
     <Button
         android:id="@+id/btn_accede_logIn"
@@ -58,10 +61,12 @@
         android:layout_marginTop="40dp"
         android:background="@drawable/custom_edit_text"
         android:ems="10"
+        android:textColor="@color/negroFondo"
+        android:gravity="center"
         android:hint="@string/contrasena_LogIn"
         android:inputType="textPassword"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etEmail_logIn" />
+        app:layout_constraintTop_toBottomOf="@+id/etEmail" />
 </androidx.constraintlayout.widget.ConstraintLayout>
