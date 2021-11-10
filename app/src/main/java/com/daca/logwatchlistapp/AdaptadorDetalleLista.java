@@ -1,12 +1,15 @@
 package com.daca.logwatchlistapp;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.EditText;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
+import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
@@ -35,6 +38,16 @@ public class AdaptadorDetalleLista extends RecyclerView.Adapter<AdaptadorDetalle
         holder.plataformatv.setText(elementos.get(position).getPlat());
         holder.captv.setText(String.valueOf(elementos.get(position).getCap()));
         holder.diatv.setText(elementos.get(position).getDia());
+
+        holder.mainLayout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(elContextoSonLosPapas, EditActivity.class);
+                intent.putExtra("elemento", elementos.get(position));
+                elContextoSonLosPapas.startActivity(intent);
+            }
+        });
+
     }
 
     @Override
@@ -48,6 +61,7 @@ public class AdaptadorDetalleLista extends RecyclerView.Adapter<AdaptadorDetalle
         TextView plataformatv;
         TextView diatv;
         TextView captv;
+        ConstraintLayout mainLayout;
 
         public MyViewHolder(@NonNull View itemView) {
             super(itemView);
@@ -55,6 +69,7 @@ public class AdaptadorDetalleLista extends RecyclerView.Adapter<AdaptadorDetalle
             plataformatv = itemView.findViewById(R.id.tv_plataforma_detalle);
             diatv = itemView.findViewById(R.id.tv_dia_detalle);
             captv = itemView.findViewById(R.id.tv_cap_detalle);
+            mainLayout = itemView.findViewById(R.id.mainLayout_listas_detalle);
         }
     }
 }

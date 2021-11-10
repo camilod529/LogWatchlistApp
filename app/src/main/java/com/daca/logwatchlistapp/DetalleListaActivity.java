@@ -27,6 +27,7 @@ public class DetalleListaActivity extends AppCompatActivity {
         setContentView(R.layout.activity_detalle_lista);
 
         final String categoria = getIntent().getStringExtra("categoria");
+        Log.d("Categoria extra", categoria);
 
         rvListasDetalle = findViewById(R.id.rv_listas_elementos_detallelista);
         final FirebaseFirestore elementosFirestore = FirebaseFirestore.getInstance();
@@ -35,22 +36,27 @@ public class DetalleListaActivity extends AppCompatActivity {
             @Override
             public void onEvent(@Nullable QuerySnapshot value, @Nullable FirebaseFirestoreException error) {
 
+
                 for (DocumentSnapshot miDocumento: value.getDocuments())
                 {
                     Elemento elemento = miDocumento.toObject(Elemento.class);
                     elemento.setId(miDocumento.getId());
-                    Log.d("elemento", elemento.getNombre());
+                    //Log.d("elemento", elemento.getNombre());
                     //System.out.println(elemento.getNombre());
-                    //if(elemento.getCategoria().equals(categoria))
-                    //{
+
+                    if(elemento.getCategoria().equals(categoria))
+                    {
                         elementos.add(elemento);
-                    //}
-                    Log.d("error", String.valueOf(error));
+                        Log.d("categoria",elemento.getCategoria());
+                    }
+                    //Log.d("error", String.valueOf(error));
 
                 }
 
             }
         });
+
+        Log.d("Elemento", elementos.toString());
 
         AdaptadorDetalleLista adapter = new AdaptadorDetalleLista(this, elementos);
         rvListasDetalle.setAdapter(adapter);
